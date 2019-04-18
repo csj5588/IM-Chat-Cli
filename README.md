@@ -44,7 +44,7 @@ README.md
 
 ## 页面布局
 
-<img src="https://user-gold-cdn.xitu.io/2019/4/18/16a3122d08db048b?w=764&h=925&f=png&s=37436">
+![](https://user-gold-cdn.xitu.io/2019/4/19/16a314d86c9c0256?w=764&h=925&f=png&s=37436)
 
 ## 效果一览
 
