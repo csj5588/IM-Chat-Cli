@@ -1,0 +1,45 @@
+{
+  "name": "IM-Chat-Cli",
+  "version": "1.0.0",
+  "description": "IM Chat Layout scaffolding",
+  "main": "index.js",
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "eslint": "eslint --ext .js --ext .jsx ./src",
+    "lint-staged": "lint-staged"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.5.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "pre-commit": "^1.2.2",
+    "cross-env": "^5.2.0",
+    "lint-staged": "^8.1.0"
+  },
+  "dependencies": {
+    "antd-mobile": "^2.2.8",
+    "classnames": "^2.2.6",
+    "dayjs": "^1.8.12",
+    "dva": "^2.4.1",
+    "isomorphic-fetch": "^2.2.1",
+    "query-string": "^5.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "swiper": "^4.5.0",
+    "umi": "^2.4.3",
+    "umi-plugin-react": "^1.4.1",
+    "vconsole": "^3.3.0"
+  },
+  "prettier": {
+    "trailingComma": true
+  }
+}

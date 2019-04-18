@@ -1,0 +1,115 @@
+.chatLine{
+  // border: 1px solid yellow;
+  padding: 10px 16px;
+  .rightSide, .leftSide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .headImg{
+      width: 40px;
+      height: 40px;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+    .content{
+      min-width: 19vw;
+      max-width: 47vw;
+      padding: 7.5px 10px;
+      font-size: 14px;
+      border: 1px solid rgba(0,21,41,0.15);
+      border-radius: 4px;
+      position: relative;
+      transition: background 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
+      user-select: none;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: calc(~'50% - 6px');
+        display: block;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        transition: background 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
+        z-index: 1;
+      }
+      &.playing{
+        animation: trigger 2s infinite;
+      }
+      i{
+        font-size: 20px;
+      }
+      span{
+        position: absolute;
+        top: 8px;
+        font-size: 12px;
+        padding: 0 5px;
+        color: #af9595;
+      }
+    }
+  }
+  .rightSide{
+    justify-content: flex-end;
+    text-align: right;
+    .content{
+      justify-content: flex-end;
+      margin-right: 10px;
+      background: #0090FF;
+      &::after{
+        right: -6px;
+        background: #0090FF;
+        border-top: 1px solid rgba(0,21,41,0.15);
+        border-right: 1px solid rgba(0,21,41,0.15);
+      }
+      &:active{
+        background: #8cb6d6;
+        &::after{
+          background: #8cb6d6;
+        }
+      }
+      .icon{
+        transform: rotate(180deg);
+        color: #fff;
+      }
+      span{
+        left: -35px;
+      }
+    }
+  }
+  .leftSide{
+    justify-content: flex-start;
+    text-align: left;
+    .content{
+      background: #fff;
+      margin-left: 10px;
+      justify-content: flex-start;
+      color: #0090FF;
+      &::after{
+        left: -6px;
+        background: #fff;
+        border-bottom: 1px solid rgba(0,21,41,0.15);
+        border-left: 1px solid rgba(0,21,41,0.15);
+      }
+      &:active{
+        background: #f5f5f5;
+        &::after{
+          background: #f5f5f5;
+        }
+      }
+      span{
+        right: -35px;
+      }
+    }
+  }
+}
+
+@keyframes trigger {
+  0% { opacity: 1 }
+  50% { opacity: 0.5 }
+  100% { opacity: 1 }
+}

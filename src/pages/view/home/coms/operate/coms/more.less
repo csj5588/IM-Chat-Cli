@@ -1,0 +1,64 @@
+ .more{
+  width: 26.6%;
+  height: 100%;
+  display: flex;
+  .icon{
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(220,220,222,1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    &:nth-of-type(2) {
+      animation: sendIn 0.3s;
+    }
+    &:active{
+      background: #f5f5f5;
+    }
+    &.rotate{
+      transform: rotate(45deg);
+    }
+    i{
+      font-size: 18px;
+      color: rgba(0,21,41,0.65);
+    }
+  }
+  .half{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-of-type(2) {
+      width: 50%;
+    }
+    .send{
+      width: 100%;
+      height: 100%;
+      padding: 8px 8px 8px 0;
+      span{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        background-color: #37d72d;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        animation: sendIn 0.3s;
+        &:active{
+          background-color: #49bb42;
+        }
+      }
+    }
+  }
+}
+
+@keyframes sendIn {
+  0% {opacity: 0; transform: scale(0.8)}
+  100% {opacity: 1; transform: scale(1)}
+}

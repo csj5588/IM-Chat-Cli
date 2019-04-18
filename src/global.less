@@ -1,0 +1,161 @@
+@import "./themes/vars.less";
+
+@all-font: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB",
+  "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif;
+html {
+  font-size: 3.7vw;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1148765 */
+  src: url('//at.alicdn.com/t/font_1148765_sdvlcmodt0s.eot');
+  src: url('//at.alicdn.com/t/font_1148765_sdvlcmodt0s.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1148765_sdvlcmodt0s.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1148765_sdvlcmodt0s.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1148765_sdvlcmodt0s.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1148765_sdvlcmodt0s.svg#iconfont') format('svg');
+}
+
+html,
+body,
+:global(#root) {
+  height: 100vh;
+  background-color: @color-background;
+}
+:global {
+  
+  *{
+    box-sizing: border-box;
+    user-select: none;
+  }
+  body {
+    font: 3.7vw/150% Arial, Verdana, "\5b8b\4f53";
+    font-family: @all-font;
+    color: @color-text-base;
+    background: @color-text-base-inverse;
+    transition: height 0.3s;
+    height: 100vh;
+  }
+  html {
+    height: 100vh;
+  }
+  html,
+  body,
+  ul,
+  li,
+  ol,
+  dl,
+  dd,
+  dt,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  form,
+  fieldset,
+  legend,
+  img {
+    margin: 0;
+    padding: 0;
+  }
+  fieldset,
+  img,
+  input,
+  button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+  }
+  // ios系统中元素被触摸时产生的半透明灰色遮罩
+  a,button,input,textarea{
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: @all-font;
+  }
+  select,
+  input {
+    vertical-align: middle;
+  }
+  select,
+  input,
+  textarea {
+    font-size: 3.7vw;
+    margin: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  img {
+    border: 0;
+    vertical-align: middle;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+  .clearfix {
+    *zoom: 1;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+  }
+  s,
+  i,
+  em,
+  u {
+    font-style: normal;
+    text-decoration: none;
+  }
+  .iconfont {
+    font-family: 'iconfont';
+  }
+  .hide {
+    display: none !important;
+  }
+  .unShow {
+    opacity: 0 !important;
+  }
+  .show {
+    opacity: 1 !important;
+  }
+  .active {
+    border: 1px solid @brand-primary!important;
+  }
+  // 组件样式覆盖
+  .swiper-pagination-bullet-active{
+    background: #8b9aab;
+  }
+  // vconsole兼容问题 勿动
+  #__vconsole{
+    user-select: none;
+  }
+}
