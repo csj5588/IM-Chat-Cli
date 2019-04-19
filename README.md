@@ -46,7 +46,7 @@ README.md
 
 ![](https://user-gold-cdn.xitu.io/2019/4/19/16a314d86c9c0256?w=764&h=925&f=png&s=37436)
 
-## 效果一览
+## 效果一览(gif较大)
 
 <table>
     <tr>
