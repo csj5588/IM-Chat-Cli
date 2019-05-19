@@ -26,19 +26,6 @@ const umircExport = {
     config: join(process.cwd(), "src", "config"),
     public: join(process.cwd(), "public"),
   },
-  proxy: {
-    "/alarmWeixinApi/*": {
-      target: "https://tq5jqk.mynatapp.cc",
-      changeOrigin: true,
-      secure: false,
-      bypass: req => {
-        // if (req.headers['x-requested-with'] !== 'XMLHttpRequest') {
-        //   return req.originalUrl;
-        // }
-        return false;
-      },
-    },
-  },
 };
 
 export default umircExport;

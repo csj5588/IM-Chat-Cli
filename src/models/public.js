@@ -3,7 +3,7 @@
 export default {
   namespace: "public",
   state: {
-    info: {},
+    phoneModel: '', // 机型
   },
   // subscriptions: {
   //   setup({ dispatch, history }) {
@@ -14,9 +14,9 @@ export default {
     // *getInfo({ payload }, { call, put }) {},
   },
   reducers: {
-    // "save/info": (state, { payload }) => ({
-    //   ...state,
-    //   info: payload,
-    // }),
+    "save/phoneModel": (state, { payload }) => ({
+      ...state,
+      phoneModel: payload,
+    }),
   },
 };

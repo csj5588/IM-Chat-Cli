@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "dva";
+import { saveStorage, clearStorage } from 'utils';
 
 import Operate from './coms/operate';
 import OperateMore from './coms/operateMore';
@@ -19,7 +20,7 @@ class Home extends Component {
     const { dispatch } = this.props;
     dispatch({ type: "home/clear" });
     // 清除localstorage
-    this.clearStorage();
+    clearStorage();
   }
 
   init = () => {
@@ -45,29 +46,13 @@ class Home extends Component {
         // 打开
         dispatch({ type: 'home/change/upHeight', payload: nextUpHeight });
         // 存储
-        this.saveStorage(nextUpHeight);
+        saveStorage(nextUpHeight);
       } else if (nextUpHeight === normalHeight && !operateMoreIO) {
         // 收起
         dispatch({ type: 'home/change/upHeight', payload: 0 });
       }
     }
   }
-
-  saveStorage = value => {
-    // 一次性存储
-    const storage = window.localStorage;
-    if (storage && storage.getItem('upHeight') === '0') {
-      storage.setItem('upHeight', value);
-    }
-  };
-
-  clearStorage = value => {
-    // 一次性存储
-    const storage = window.localStorage;
-    if (storage) {
-      storage.setItem('upHeight', 0);
-    }
-  };
 
   // 键盘关闭 chat拉伸
   keyBoardDown = () => {
@@ -81,7 +66,13 @@ class Home extends Component {
   // 底边显示内容
   showView = () => {
     const view = document.querySelector('#view');
-    if (view) view.scrollIntoView();
+    if (view) {
+      view.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "start",
+      });
+    }
   }
 
   render() {

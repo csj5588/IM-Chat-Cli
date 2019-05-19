@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
+import { getIphoneUpHeight, saveStorage } from 'utils';
 import Speak from './coms/speak';
 import styles from './text.less';
 
@@ -14,9 +15,25 @@ class Text extends React.Component {
   }
 
   onFocus = () => {
-    const { dispatch } = this.props;
-    dispatch({ type: 'home/change/operateMoreIO', payload: false });
-  }
+    const { dispatch, publicModel, homeModel, showView } = this.props;
+    const { phoneModel } = publicModel;
+    const { normalHeight, operateMoreIO, upHeight } = homeModel;
+    dispatch({ type: "home/change/operateMoreIO", payload: false });
+    // 处理ios焦点兼容性问题
+    if (phoneModel === "iphone") {
+      const objs = getIphoneUpHeight();
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, objs.time);
+      setTimeout(() => {
+        showView();
+      }, objs.view);
+      const nextUpHeight = normalHeight - objs.upHeight;
+      dispatch({ type: "home/change/upHeight", payload: nextUpHeight });
+      // 存储
+      saveStorage("upHeight", nextUpHeight);
+    }
+  };
 
   render() {
 
@@ -46,6 +63,7 @@ class Text extends React.Component {
   }
 }
 
-export default connect(({ home }) => ({
-  homeModel: home
+export default connect(stores => ({
+  homeModel: stores.home,
+  publicModel: stores.public
 }))(Text);

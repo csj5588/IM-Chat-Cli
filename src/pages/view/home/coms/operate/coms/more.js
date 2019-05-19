@@ -24,15 +24,16 @@ class More extends React.Component {
   }
 
   showOperateMore = () => {
-    const { dispatch, onBlur, homeModel } = this.props;
+    const { dispatch, onBlur, homeModel, publicModel } = this.props;
     const { operateMoreIO, upHeight, normalHeight } = homeModel;
+    const { phoneModel } = publicModel;
 
     const onFocus = () => {
       const dom = document.querySelector('#text');
       dom.focus();
     }
     
-    // 1、trigger键盘-核心
+    // 1、trigger键盘 - 核心 - 加入ios变化
     if (!operateMoreIO) {
       dispatch({ type: 'home/change/operateMoreIO', payload: true });
       if (upHeight === 0) {
@@ -50,7 +51,9 @@ class More extends React.Component {
       }
     } else {
       dispatch({ type: 'home/change/operateMoreIO', payload: false });
-      onFocus();
+      if (phoneModel === "android") {
+        onFocus();
+      }
     }
   }
 
@@ -99,6 +102,7 @@ class More extends React.Component {
   }
 }
 
-export default connect(({ home }) => ({
-  homeModel: home
+export default connect(stores => ({
+  homeModel: stores.home,
+  publicModel: stores.public
 }))(More);

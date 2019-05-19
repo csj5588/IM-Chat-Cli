@@ -16,8 +16,13 @@ class Chat extends React.Component {
   }
 
   closeOperateMore = () => {
-    const { keyBoardDown } = this.props;
-    keyBoardDown();
+    const { keyBoardDown, homeModel } = this.props;
+    const { upHeight } = homeModel;
+    if (upHeight !== 0) {
+      keyBoardDown();
+      const text = document.querySelector("#text");
+      text.blur();
+    }
   }
 
   showView = () => {
@@ -44,6 +49,7 @@ class Chat extends React.Component {
           { height: `${normalHeight - 48}px` }
         }
         onClick={this.closeOperateMore}
+        onTouchStart={this.closeOperateMore}
       >
         <div
           id="chat"

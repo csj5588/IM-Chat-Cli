@@ -109,7 +109,7 @@ class Speak extends React.Component {
             ${isCancel ? styles.cancelShow : ''}
           `}
         >
-          <Zcon type="reduction" />
+          <i className="iconfont">&#xe614;</i>
           <p>松开手指, 取消发送</p>
         </div>
       </div>
