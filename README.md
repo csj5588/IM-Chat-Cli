@@ -64,7 +64,7 @@ README.md
         </td>
         <td>
             <center>
-                <img src="https://user-gold-cdn.xitu.io/2019/4/18/16a3123bb988b73f?w=496&h=960&f=gif&s=4605409"> 键盘布局
+                [键盘布局](https://user-gold-cdn.xitu.io/2019/4/18/16a3123bb988b73f?w=496&h=960&f=gif&s=4605409)
             </center>
         </td>
     </tr>
