@@ -96,7 +96,7 @@ README.md
 
 ## TODO
 
-- [√] 移动端基础架构
+- [$\color{green}{√}$] 移动端基础架构
 - [√] IM-Chat布局
 - [√] eslint
 - [√] 基础结构
