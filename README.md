@@ -1,8 +1,9 @@
-### IM-CHAT-CLI
+## IM-CHAT-CLI
 
 ---
 
-移动端IM（即时通讯）布局脚手架。解决内部及时通讯无框架的问题。
+This is an instant messaging layout scaffold to solve the problem of internal system instant messaging without framework。
+(移动端IM（即时通讯）布局脚手架。解决内部及时通讯无框架的问题)
 
 
 ### 使用
@@ -13,10 +14,10 @@ cnpm install
 ```
 启动项目
 ```
-npm run start
+cnpm run start
 ```
 
-## 项目结构
+### 项目结构
 
 <pre style="font-size: 12px">
 public                  <span style="color: #007947">// 公共文件 可以放一些第三方字体 样式库等</span>
@@ -106,4 +107,4 @@ README.md
 - [√] 异常统一处理
 
 ## END
-  项目将持续稳定更新迭代，欢迎各种issue。谢谢。
+  项目将持续稳定更新迭代，欢迎各种issue.
