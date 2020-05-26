@@ -59,7 +59,7 @@ README.md
     <tr>
         <td>
             <center>
-                <img src="https://user-gold-cdn.xitu.io/2019/4/18/16a3105dcd6bbe2d?w=496&h=960&f=gif&s=4500822"> 文字布局
+                [文字布局](https://user-gold-cdn.xitu.io/2019/4/18/16a3105dcd6bbe2d?w=496&h=960&f=gif&s=4500822)
             </center>
         </td>
         <td>
@@ -71,19 +71,19 @@ README.md
     <tr>
         <td>
             <center>
-                <img src="https://user-gold-cdn.xitu.io/2019/4/18/16a3124c6a020762?w=496&h=960&f=gif&s=2531457"> 语音效果
+                [语音效果](https://user-gold-cdn.xitu.io/2019/4/18/16a3124c6a020762?w=496&h=960&f=gif&s=2531457)
             </center>
         </td>
         <td>
             <center>
-                <img src="https://user-gold-cdn.xitu.io/2019/4/18/16a3125d932e72d1?w=496&h=960&f=gif&s=2431489"> 语音效果
+                [语音效果](https://user-gold-cdn.xitu.io/2019/4/18/16a3125d932e72d1?w=496&h=960&f=gif&s=2431489)
             </center>
         </td>
     </tr>
     <tr>
         <td>
             <center>
-                <img src="https://user-gold-cdn.xitu.io/2019/4/18/16a312736b4a4805?w=496&h=960&f=gif&s=5005924"> 操作效果
+                [操作效果](https://user-gold-cdn.xitu.io/2019/4/18/16a312736b4a4805?w=496&h=960&f=gif&s=5005924)
             </center>
         </td>
         <td>
