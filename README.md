@@ -95,9 +95,8 @@ README.md
 </table>
 
 ## TODO
-<font color=green>[√]</font>
 
-- <font color=green>[√]</font> 移动端基础架构
+- [√] 移动端基础架构
 - [√] IM-Chat布局
 - [√] eslint
 - [√] 基础结构
