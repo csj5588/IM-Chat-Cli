@@ -60,7 +60,7 @@ README.md
     <tr>
         <td>
             <center>
-                [文字布局](https://user-gold-cdn.xitu.io/2019/4/18/16a3105dcd6bbe2d?w=496&h=960&f=gif&s=4500822)
+                ![文字布局](https://s1.ax1x.com/2020/09/21/wHuijS.gif)
             </center>
         </td>
         <td>
