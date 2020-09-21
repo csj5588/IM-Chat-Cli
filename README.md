@@ -56,43 +56,12 @@ README.md
 
 ## 效果一览(gif较大)
 
-<table>
-    <tr>
-        <td>
-            <center>
-                ![文字布局](https://s1.ax1x.com/2020/09/21/wHuijS.gif)
-            </center>
-        </td>
-        <td>
-            <center>
-                [键盘布局](https://user-gold-cdn.xitu.io/2019/4/18/16a3123bb988b73f?w=496&h=960&f=gif&s=4605409)
-            </center>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <center>
-                [语音效果](https://user-gold-cdn.xitu.io/2019/4/18/16a3124c6a020762?w=496&h=960&f=gif&s=2531457)
-            </center>
-        </td>
-        <td>
-            <center>
-                [语音效果](https://user-gold-cdn.xitu.io/2019/4/18/16a3125d932e72d1?w=496&h=960&f=gif&s=2431489)
-            </center>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <center>
-                [操作效果](https://user-gold-cdn.xitu.io/2019/4/18/16a312736b4a4805?w=496&h=960&f=gif&s=5005924)
-            </center>
-        </td>
-        <td>
-            <center>
-            </center>
-        </td>
-    </tr>
-</table>
+| 名称       | 示意图                                 |
+| ---------- | ----------------------------------------- |
+| 文字布局 | ![文字布局](https://s1.ax1x.com/2020/09/21/wHuijS.gif)|
+| 键盘布局 | ![文字布局](https://s1.ax1x.com/2020/09/21/wH8udS.gif)|
+| 语音效果 | ![文字布局](https://s1.ax1x.com/2020/09/21/wH8VMt.gif)|
+| 操作效果 | ![文字布局](https://s1.ax1x.com/2020/09/21/wH8kRA.gif)|
 
 ## TODO
 
