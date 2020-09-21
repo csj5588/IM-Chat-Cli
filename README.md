@@ -59,9 +59,9 @@ README.md
 | 名称       | 示意图                                 |
 | ---------- | ----------------------------------------- |
 | 文字布局 | ![文字布局](https://s1.ax1x.com/2020/09/21/wHuijS.gif)|
-| 键盘布局 | ![文字布局](https://s1.ax1x.com/2020/09/21/wH8udS.gif)|
-| 语音效果 | ![文字布局](https://s1.ax1x.com/2020/09/21/wH8VMt.gif)|
-| 操作效果 | ![文字布局](https://s1.ax1x.com/2020/09/21/wH8kRA.gif)|
+| 键盘布局 | ![键盘布局](https://s1.ax1x.com/2020/09/21/wH8udS.gif)|
+| 语音效果 | ![语音效果](https://s1.ax1x.com/2020/09/21/wH8VMt.gif)|
+| 操作效果 | ![操作效果](https://s1.ax1x.com/2020/09/21/wH8kRA.gif)|
 
 ## TODO
 
